@@ -1,11 +1,3 @@
-// function createParagraph() {
-//   const paragraph = document.createElement("p");
-//   paragraph.textContent = `
-//   Welcome to Baratie, where every bite tells a high-seas tale.`;
-
-//   return paragraph;
-// }
-
 function createParagraph(text) {
   const paragraph = document.createElement("p");
   paragraph.textContent = text;

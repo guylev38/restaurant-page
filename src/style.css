@@ -18,7 +18,7 @@ body{
   font-family: 'merriweather', sans-serif;
   background: url('./background.png');
   background-repeat: no-repeat;
-  background-size: 1920px 1080px;
+  background-size: 100vw 100vh;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -31,22 +31,61 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+}
 
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 10px;
+}
+
+.tab{
+  padding: 20px;
+  width: 150px;
+  background-color: var(--wood-brown);
+  border: 3px solid var(--brass);
+  border-radius: 20px;
+  color: white;
+  font-family: "merriweather", sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.tab:hover{
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.tab.active{
+  color: var(--seafoam-green);
+  background-color: var(--brass);
+  border: 3px solid var(--sandy-beige);
+}
+
+
+main{
+  background-color: var(--wood-brown);
+  width: 45%;
+  min-height: 50vh;
+  padding: 50px;
+  border: 5px solid var(--brass);
+  border-radius: 20px;
+  opacity: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .home{
-  background-color: var(--wood-brown);
   color: var(--cream);
-  width: 45%;
-  height: 30vh;
-  padding: 50px;
-  border: 5px solid var(--cream);
-  border-radius: 20px;
-  font-size: 20px;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 90px;
   text-align: center;
 }
 
@@ -54,4 +93,5 @@ body{
   color: var(--seafoam-green);
   font-style: italic;
   align-self: center; 
+  font-size: 1.5rem;
 }
