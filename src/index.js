@@ -30,18 +30,6 @@ function createNav() {
   return nav;
 }
 
-function loadWebsite() {
-  const content = document.getElementById("content");
-  const nav = createNav();
-  const main = document.createElement("main");
-  main.id = "main";
-  main.appendChild(createHome());
-  content.appendChild(nav);
-  content.appendChild(main);
-}
-
-loadWebsite();
-
 function addActive(e) {
   const newButton = e.target;
   const prevButton = document.getElementsByClassName("active")[0];
@@ -66,3 +54,17 @@ function switchMain() {
       break;
   }
 }
+
+function footer() {} // Add Footer Later
+
+function loadWebsite() {
+  const content = document.getElementById("content");
+  const nav = createNav();
+  const main = document.createElement("main");
+  main.id = "main";
+  main.appendChild(createHome());
+  content.appendChild(nav);
+  content.appendChild(main);
+}
+
+loadWebsite();
